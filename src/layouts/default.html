@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    {{> head }}
+</head>
+
+<body>
+
+    <div class="page">
+        {{> header }}
+        <div class="container">
+            {{> body }}
+        </div>
+    </div>
+
+
+    {{> footer }}
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/three.min.js"></script>
+    <script src="assets/js/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+            el: ".header",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3fbdff,
+            backgroundColor: 0x2c,
+            points: 11.00,
+            maxDistance: 22.00
+        });
+    </script>
+</body>
+
+</html>
