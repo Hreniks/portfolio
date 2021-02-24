@@ -379,33 +379,85 @@ body {
 }
 
 .container {
-    max-width: 111rem;
+    max-width: 120rem;
     width: 100%;
     margin: 0 auto;
+    padding: 0 1.5rem;
 }
 
 .header {
     width: 100%;
-    height: 740px;
-    background-color: #00002c;
+    height: 100vh;
+    background: #00002c;
 }
 
 .vanta-canvas {
-    padding-top: 10rem;
+    padding-top: 9.4rem;
+}
+
+.header__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: calc(100vh - 97.8px);
+}
+
+.header__text {
+    width: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.header__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 6.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header__subtitle {
+    margin-top: 3rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.header__photo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.header__img {
+    height: 400px;
+    fill: #ffff;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .nav {
-    padding-top: 3rem;
-    padding-bottom: 2.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
 }
 
 .nav__list {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
 }
 
 .nav__item {
@@ -421,9 +473,9 @@ body {
     transform: scaleX(0);
     position: absolute;
     bottom: -5px;
-    transition: -webkit-transform 0.2s ease-in-out;
-    transition: transform 0.2s ease-in-out;
-    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+    transition: -webkit-transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
 }
 
 .nav__item:hover:after {
@@ -446,5 +498,16 @@ body {
 }
 
 .page {
+    background-color: #ffff;
+    overflow: hidden;
+}
+
+.about {
+    width: 100%;
+    height: 86.4rem;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color: #ffff;
 }
