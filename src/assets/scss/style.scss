@@ -5,7 +5,7 @@ html {
     font-size: 62.5%;
 }
 
-// div,nav {
+// div,nav,h1 {
 //     outline: 2px solid red;
 // }
 
@@ -31,4 +31,5 @@ body {
 @import "./blocks/header";
 @import "./blocks/nav";
 @import "./blocks/page";
+@import "./blocks/about";
 

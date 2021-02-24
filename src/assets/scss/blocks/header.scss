@@ -1,10 +1,72 @@
 .header {
     width: 100%;
-    height: 740px;
-    background-color: #00002c;
+    height: 100vh;
+
+    background: #00002c;
+
+    position: relative;
+
+    &:after {
+        content: "";
+        // display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        background: linear-gradient(to top, rgb(0, 0, 44) 3%, rgba(0, 0, 0, 0) 15%);
+    }
+
 }
 
 
-.vanta-canvas{
-    padding-top: 10rem;
+.vanta-canvas {
+    padding-top: 9.4rem;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 97.8px);
+}
+
+
+.header__text {
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+
+
+}
+
+.header__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 6.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+
+}
+
+.header__subtitle {
+    margin-top: 3rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.header__photo{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.header__img{
+    height: 380px;
+    object-fit: cover;
+    border-radius: 5px;
 }

@@ -1,13 +1,13 @@
 .nav {
-    padding-top: 3rem;
-    padding-bottom: 2.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 2.4rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
 }
 
 .nav__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .nav__item {
@@ -20,11 +20,11 @@
         width: 100%;
         border-bottom: 1px solid $white;
         transform: scaleX(0);
-        
+
         position: absolute;
         bottom: -5px;
 
-        transition: transform 0.2s ease-in-out
+        transition: transform 0.1s ease-in-out
     }
 
 
