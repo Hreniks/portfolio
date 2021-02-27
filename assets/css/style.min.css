@@ -343,7 +343,10 @@ body {
   max-width: 120rem;
   width: 100%;
   margin: 0 auto;
-  padding: 0 1.5rem; }
+  padding: 0 1.5rem;
+  position: relative; }
+  .container--about {
+    max-width: 160rem; }
 
 .header {
   width: 100%;
@@ -399,9 +402,7 @@ body {
 
 .nav {
   padding-top: 5rem;
-  padding-bottom: 2.4rem;
-  padding-left: 20rem;
-  padding-right: 20rem; }
+  padding-bottom: 2.4rem; }
 
 .nav__list {
   display: flex;
@@ -418,6 +419,8 @@ body {
     position: absolute;
     bottom: -5px;
     transition: transform 0.1s ease-in-out; }
+  .nav__item a {
+    text-decoration: none; }
   .nav__item:hover:after {
     transform: scaleX(1); }
 
@@ -446,7 +449,7 @@ body {
   background-position: center;
   background-color: #ffff;
   position: relative; }
-  .about:after {
+  .about:before {
     content: "";
     display: block;
     width: 100%;
@@ -454,5 +457,42 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: 1;
+    z-index: 0;
     background: linear-gradient(to bottom, #00002c 3%, rgba(28, 28, 32, 0.2) 50%, rgba(28, 28, 32, 0.50196) 100%); }
+
+.about__content {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4rem; }
+  .about__content-item {
+    display: flex;
+    flex-direction: column;
+    color: #ffff; }
+  .about__content-up {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  .about__content-icon {
+    display: block;
+    width: 6rem;
+    height: 6rem; }
+    .about__content-icon--monitor {
+      fill: #57a4ff; }
+    .about__content-icon--mouse {
+      fill: #57a4ff; }
+  .about__content-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.8rem;
+    padding-left: 2.3rem; }
+  .about__content-text {
+    max-width: 35rem;
+    margin-top: 2.5rem;
+    text-align: left; }
+    .about__content-text p {
+      display: block; }
+
+.tech {
+  height: 100vh;
+  background: url("../images/tech.jpg") center no-repeat; }
