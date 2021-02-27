@@ -389,6 +389,18 @@ body {
     width: 100%;
     height: 100vh;
     background: #00002c;
+    position: relative;
+}
+
+.header:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background: linear-gradient(to top, #00002c 3%, rgba(0, 0, 0, 0) 15%);
 }
 
 .vanta-canvas {
@@ -439,15 +451,14 @@ body {
 }
 
 .header__img {
-    height: 400px;
-    fill: #ffff;
+    height: 380px;
     -o-object-fit: cover;
     object-fit: cover;
     border-radius: 5px;
 }
 
 .nav {
-    padding-top: 2.4rem;
+    padding-top: 5rem;
     padding-bottom: 2.4rem;
     padding-left: 20rem;
     padding-right: 20rem;
@@ -504,10 +515,23 @@ body {
 
 .about {
     width: 100%;
-    height: 86.4rem;
+    height: 100vh;
     background-image: url("../images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: #ffff;
+    position: relative;
+}
+
+.about:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom, #00002c 3%, rgba(28, 28, 32, 0.2) 50%, rgba(28, 28, 32, 0.50196) 100%);
 }

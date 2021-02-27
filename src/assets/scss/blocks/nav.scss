@@ -1,8 +1,8 @@
 .nav {
     padding-top: 5rem;
     padding-bottom: 2.4rem;
-    padding-left: 20rem;
-    padding-right: 20rem;
+    // padding-left: 20rem;
+    // padding-right: 20rem;
 }
 
 .nav__list {
@@ -27,6 +27,9 @@
         transition: transform 0.1s ease-in-out
     }
 
+    a{
+        text-decoration: none;
+    }
 
     &:hover:after {
         transform: scaleX(1);
