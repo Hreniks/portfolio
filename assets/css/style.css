@@ -522,7 +522,7 @@ body {
 
 .about {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url("../images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -537,10 +537,20 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    bottom: 0;
     left: 0;
     z-index: 0;
-    background: linear-gradient(to bottom, #00002c 3%, rgba(28, 28, 32, 0.2) 50%, rgba(28, 28, 32, 0.50196) 100%);
+    background: linear-gradient(to bottom, #00002c 1%, rgba(28, 28, 32, 0.1) 90%);
+}
+
+.about:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .about__content {
@@ -591,9 +601,12 @@ body {
     padding-left: 2.3rem;
 }
 
+.about__content-down {
+    margin-top: 2.5rem;
+}
+
 .about__content-text {
     max-width: 35rem;
-    margin-top: 2.5rem;
     text-align: left;
 }
 
@@ -602,6 +615,13 @@ body {
 }
 
 .tech {
+    height: 100%;
+    background: #224c69;
+    background-size: cover;
+}
+
+.tech__content {
     height: 100vh;
-    background: url("../images/tech.jpg") center no-repeat;
+    display: -ms-flexbox;
+    display: flex;
 }
