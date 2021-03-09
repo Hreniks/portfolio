@@ -119,11 +119,27 @@
 
     &-icon{
         display: block;
-        width: 4rem;
-        height: 4rem;
+        width: 5rem;
+        height: 5rem;
 
         margin: 0 auto;
         
+        &--gulp{
+            width: 6rem;
+            height: 6rem;
+        }
+
+        &--sass{
+            padding-left: 0.5rem;
+        }
+
+        &--css{
+            margin-top: .5rem;
+        }
+
+        &--git{
+            margin-top: 1rem;
+        }
     }
 
     &-text{ 
