@@ -615,7 +615,6 @@ body {
 }
 
 .tech {
-    height: 100%;
     background: #224c69;
     background-size: cover;
 }
@@ -624,4 +623,133 @@ body {
     height: 100vh;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.tech__content-left {
+    width: 40%;
+}
+
+.tech__content-right {
+    width: 60%;
+    -webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+}
+
+.tech__content-title {
+    max-width: 40rem;
+    margin-bottom: 6rem;
+    font-family: Myriad Pro, sans-serif;
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.tech__content-text {
+    max-width: 45rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+.tech__content-text p {
+    margin-bottom: 5rem;
+}
+
+.tech__content-text p:last-child {
+    margin-bottom: 0;
+}
+
+.tech__blocks {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.tech__blocks-item {
+    width: 15rem;
+    height: 15rem;
+    margin: 0.3rem 0.3rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #1c1c20;
+    transition: background-color .4s linear;
+}
+
+.tech__blocks-item-content {
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+.tech__blocks-item--4 {
+    margin-left: 15rem;
+}
+
+.tech__blocks-item:hover {
+    background-color: #ffff;
+}
+
+.tech__blocks-item:hover .tech__blocks-text {
+    color: #000;
+}
+
+.tech__blocks-icon {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto;
+}
+
+.tech__blocks-icon--gulp {
+    width: 6rem;
+    height: 6rem;
+}
+
+.tech__blocks-icon--sass {
+    padding-left: 0.5rem;
+}
+
+.tech__blocks-text {
+    margin-top: 1rem;
+    color: #ffff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    transition: color .3s linear;
+}
+
+.works {
+    height: 65rem;
+}
+
+.works__slider {
+    width: 100%;
+    height: 100%;
+    background-color: #181c24;
+    overflow: hidden;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.works__slider-item {
+    width: 33.3333%;
+    height: 50%;
+    margin: 0 .3rem;
+    outline: 1px solid black;
+    background-color: brown;
 }
