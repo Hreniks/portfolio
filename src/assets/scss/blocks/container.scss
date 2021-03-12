@@ -2,11 +2,12 @@
     max-width: 120rem;
     width: 100%;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 4rem;
     position: relative;
 
 
     &--mw160{
         max-width: 160rem;
+        position: relative;
     }
 }

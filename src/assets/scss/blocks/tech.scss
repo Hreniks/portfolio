@@ -1,7 +1,7 @@
 .tech {
     background: darken($color: #224d6a, $amount: 0.2);
     background-size: cover;
-
+    overflow: hidden !important;
     // position: relative;
 
 
@@ -56,6 +56,10 @@
         font-size: 4rem;
         font-weight: normal;
         line-height: 1.2;
+
+        @include breakpoint($mobile) {
+            font-size: 1rem;
+        }
     }
 
     &-text {

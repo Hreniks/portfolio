@@ -3,15 +3,38 @@
     padding-bottom: 2.4rem;
     // padding-left: 20rem;
     // padding-right: 20rem;
+    
+
+    @include breakpoint($iphone6){
+        display: none;
+    }
+
+    @include breakpoint($iphone6plus){
+        display: none;
+    }
 }
 
 .nav__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+
+    
 }
 
 .nav__item {
     position: relative;
+
+    margin: 0 7rem;
+
+    &:first-child{
+        margin-left: 0;
+    }
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    
 
     &:after {
         

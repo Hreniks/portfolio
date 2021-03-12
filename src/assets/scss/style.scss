@@ -1,5 +1,6 @@
 @import "vars";
 @import "./vendor/reset.scss";
+@import "./blocks/mixsins";
 
 html {
     font-size: 62.5%;
@@ -15,6 +16,7 @@ body {
     font-size: 1.4rem;
     line-height: 1.5;
     color: #fff;
+    
 
 }
 
@@ -27,6 +29,7 @@ body {
 
 
 // Blocks 
+
 @import "./blocks/container";
 @import "./blocks/header";
 @import "./blocks/nav";
@@ -37,4 +40,5 @@ body {
 @import "./blocks/form";
 @import "./blocks/icons";
 @import "./blocks/footer";
+
 

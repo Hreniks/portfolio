@@ -6,7 +6,7 @@
 
     position: relative;
 
-    &:after{
+    &:after {
         content: "";
         // display: block;
         width: 100%;
@@ -23,23 +23,63 @@
 
 .vanta-canvas {
     padding-top: 9.4rem;
+
+    @include breakpoint($mobile) {
+        padding-top: 0;
+    }
 }
 
-.header__inner{
+.header__inner {
     display: flex;
     justify-content: center;
     align-items: center;
     height: calc(100vh - 97.8px);
+    
+
+    @include breakpoint($mobile) {
+        flex-direction: column;
+        height: 100vh;
+
+    }
 }
 
 
 .header__text {
-    width: 50%;
-    
+    width: 60%;
+   
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+
+    &-br{
+
+        &-1{
+            display: block;
+ 
+            @include breakpoint($mobile) {
+            //  display: block;
+     
+         }
+        }
+
+       &-2{
+           display: none;
+
+           @include breakpoint($mobile) {
+            // display: block;
+    
+        }
+       }
+       
+    }
+    
+
+    @include breakpoint($mobile) {
+        width: 100%;
+        text-align: center;
+
+    }
 
 
 
@@ -50,23 +90,51 @@
     font-size: 6.5rem;
     font-weight: bold;
     line-height: 1.2;
+    
+
+    @include breakpoint($mobile) {
+        font-size: 3.5rem;
+
+        
+        
+    }
 
 }
 
 .header__subtitle {
-    margin-top: 3rem;
+    width: 26.3rem;
+    
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
     font-size: 2.2rem;
     font-weight: bold;
+   
+
+    @include breakpoint($mobile) {
+        font-size: 2rem;
+
+    }
 }
 
-.header__photo{
+.header__photo {
+    width: 40%;
+    
     display: flex;
     justify-content: center;
-    width: 50%;
+
+    @include breakpoint($mobile) {
+        padding-top: 3.5rem;
+    }
+    
 }
 
-.header__img{
-    height: 380px;
+.header__img {
+    height: 38rem;
     object-fit: cover;
     border-radius: 5px;
+
+    @include breakpoint($mobile) {
+        max-height: 30rem;
+    }
 }

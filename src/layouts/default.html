@@ -12,10 +12,11 @@
         <main class="main">
             {{> body }}
         </main>
+        {{> footer }}
     </div>
 
 
-    {{> footer }}
+    
 
     <script src="assets/js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
@@ -24,7 +25,7 @@
         VANTA.NET({
             el: ".header",
             mouseControls: false,
-            touchControls: true,
+            touchControls: false,
             gyroControls: false,
             minHeight: 200.00,
             minWidth: 200.00,
