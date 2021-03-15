@@ -405,7 +405,7 @@ body {
       font-size: 3.5rem; } }
 
 .header__subtitle {
-  width: 26.3rem;
+  width: 100%;
   padding-top: 3rem;
   padding-bottom: 3rem;
   font-size: 2.2rem;
@@ -528,7 +528,7 @@ body {
       fill: #57a4ff; }
       @media (max-width: 575px) {
         .about__content-icon--mouse {
-          margin-right: .4em; } }
+          margin-right: .4rem; } }
   .about__content-title {
     font-family: "Roboto", sans-serif;
     font-size: 2.8rem;
@@ -552,19 +552,32 @@ body {
 
 .tech {
   background: #224c69;
-  background-size: cover;
-  overflow: hidden !important; }
+  padding: 20rem 0; }
+  @media (max-width: 575px) {
+    .tech {
+      padding: 5rem 0; } }
 
 .tech__content {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 575px) {
+    .tech__content {
+      flex-direction: column; } }
   .tech__content-left {
     width: 40%; }
+    @media (max-width: 575px) {
+      .tech__content-left {
+        width: 100%;
+        margin-bottom: 5rem;
+        text-align: center; } }
   .tech__content-right {
     width: 60%;
     transform: rotate(-50deg); }
+    @media (max-width: 575px) {
+      .tech__content-right {
+        width: 100%;
+        transform: none; } }
   .tech__content-title {
     max-width: 40rem;
     margin-bottom: 6rem;
@@ -574,7 +587,8 @@ body {
     line-height: 1.2; }
     @media (max-width: 575px) {
       .tech__content-title {
-        font-size: 1rem; } }
+        font-size: 2.5rem;
+        margin-bottom: 3rem; } }
   .tech__content-text {
     max-width: 45rem;
     font-family: "Roboto", sans-serif;
@@ -582,6 +596,9 @@ body {
     line-height: 1.6; }
     .tech__content-text p {
       margin-bottom: 5rem; }
+      @media (max-width: 575px) {
+        .tech__content-text p {
+          margin-bottom: 3rem; } }
       .tech__content-text p:last-child {
         margin-bottom: 0; }
 
@@ -600,10 +617,20 @@ body {
     cursor: pointer;
     background-color: #1c1c20;
     transition: background-color .4s linear; }
+    @media (max-width: 575px) {
+      .tech__blocks-item {
+        width: 30%;
+        height: 13.5rem; } }
     .tech__blocks-item-content {
       transform: rotate(50deg); }
+      @media (max-width: 575px) {
+        .tech__blocks-item-content {
+          transform: none; } }
     .tech__blocks-item--4 {
       margin-left: 15rem; }
+      @media (max-width: 575px) {
+        .tech__blocks-item--4 {
+          margin-left: 0.3rem; } }
     .tech__blocks-item:hover {
       background-color: #ffff; }
       .tech__blocks-item:hover .tech__blocks-text {

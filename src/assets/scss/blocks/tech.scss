@@ -1,7 +1,14 @@
 .tech {
     background: darken($color: #224d6a, $amount: 0.2);
-    background-size: cover;
-    overflow: hidden !important;
+    padding: 20rem 0;
+
+    @include breakpoint($mobile) {
+        padding: 5rem 0;
+        
+    }
+
+    // background-size: cover;
+    // overflow: hidden;
     // position: relative;
 
 
@@ -31,21 +38,36 @@
 }
 
 .tech__content {
-    height: 100vh;
+
 
     display: flex;
     justify-content: center;
     align-items: center;
 
+    @include breakpoint($mobile) {
+        flex-direction: column;
+        
+    }
+
     &-left {
         width: 40%;
 
+        @include breakpoint($mobile) {
+            width: 100%;
+            margin-bottom: 5rem;
+
+            text-align: center;
+        }
     }
 
     &-right {
         width: 60%;
-
         transform: rotate(-50deg);
+
+        @include breakpoint($mobile) {
+            width: 100%;
+            transform: none;
+        }
     }
 
     &-title {
@@ -58,7 +80,9 @@
         line-height: 1.2;
 
         @include breakpoint($mobile) {
-            font-size: 1rem;
+            font-size: 2.5rem;
+            
+            margin-bottom: 3rem;
         }
     }
 
@@ -71,6 +95,11 @@
 
         p {
             margin-bottom: 5rem;
+
+            @include breakpoint($mobile) {
+                margin-bottom: 3rem;
+            }
+
 
             &:last-child {
                 margin-bottom: 0;
@@ -85,9 +114,11 @@
     justify-content: center;
     flex-wrap: wrap;
 
+
     &-item {
         width: 15rem;
         height: 15rem;
+
 
         margin: 0.3rem 0.3rem;
 
@@ -96,57 +127,70 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
         cursor: pointer;
         background-color: #1c1c20;
 
         transition: background-color .4s linear;
 
-        &-content{
-            transform: rotate(50deg);
+        @include breakpoint($mobile) {
+            width: 30%;
+            height: 13.5rem;
         }
 
-        &--4{
-            margin-left: 15rem;
+        &-content {
+            transform: rotate(50deg);
+            
+            @include breakpoint($mobile) {
+                transform: none;
+            }
         }
-        
-        &:hover{
+
+        &--4 {
+            margin-left: 15rem;
+
+            @include breakpoint($mobile) {
+                margin-left: 0.3rem;
+            }
+        }
+
+        &:hover {
             background-color: $white;
 
-            .tech__blocks-text{
+            .tech__blocks-text {
                 color: #000;
             }
         }
 
-        
+
     }
 
-    &-icon{
+    &-icon {
         display: block;
         width: 5rem;
         height: 5rem;
 
         margin: 0 auto;
-        
-        &--gulp{
+
+        &--gulp {
             width: 6rem;
             height: 6rem;
         }
 
-        &--sass{
+        &--sass {
             padding-left: 0.5rem;
         }
 
-        &--css{
+        &--css {
             margin-top: .5rem;
         }
 
-        &--git{
+        &--git {
             margin-top: 1rem;
         }
     }
 
-    &-text{ 
+    &-text {
         margin-top: 1rem;
         color: $white;
         font-size: 1.6rem;

@@ -390,6 +390,7 @@ body {
 
 .container--mw160 {
     max-width: 160rem;
+    position: relative;
 }
 
 .header {
@@ -414,7 +415,7 @@ body {
     padding-top: 9.4rem;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 575px) {
     .vanta-canvas {
         padding-top: 0;
     }
@@ -428,30 +429,35 @@ body {
     -ms-flex-align: center;
     align-items: center;
     height: calc(100vh - 97.8px);
-    outline: 1px solid red;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 575px) {
     .header__inner {
         -ms-flex-direction: column;
         flex-direction: column;
+        height: 100vh;
     }
 }
 
 .header__text {
-    width: 50%;
-    outline: 1px solid red;
+    width: 60%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-pack: center;
     justify-content: center;
-    -ms-flex-align: start;
-    align-items: flex-start;
 }
 
-@media (max-width: 376px) {
+.header__text-br-1 {
+    display: block;
+}
+
+.header__text-br-2 {
+    display: none;
+}
+
+@media (max-width: 575px) {
     .header__text {
         width: 100%;
         text-align: center;
@@ -463,33 +469,40 @@ body {
     font-size: 6.5rem;
     font-weight: bold;
     line-height: 1.2;
-    outline: 1px solid red;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 575px) {
     .header__title {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 }
 
 .header__subtitle {
+    width: 26.3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     font-size: 2.2rem;
     font-weight: bold;
-    outline: 1px solid red;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 575px) {
     .header__subtitle {
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
 }
 
 .header__photo {
+    width: 40%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 50%;
+}
+
+@media (max-width: 575px) {
+    .header__photo {
+        padding-top: 3.5rem;
+    }
 }
 
 .header__img {
@@ -499,10 +512,9 @@ body {
     border-radius: 5px;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 575px) {
     .header__img {
-        width: 100%;
-        height: auto;
+        max-height: 30rem;
     }
 }
 
@@ -581,7 +593,8 @@ body {
 }
 
 .page {
-    background-color: #ffff;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -606,17 +619,6 @@ body {
     background: linear-gradient(to bottom, #00002c 1%, rgba(28, 28, 32, 0.1) 90%);
 }
 
-.about:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-}
-
 .about__content {
     height: 100vh;
     display: -ms-flexbox;
@@ -626,6 +628,14 @@ body {
     -ms-flex-align: center;
     align-items: center;
     padding-top: 4rem;
+}
+
+@media (max-width: 575px) {
+    .about__content {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-top: 0;
+    }
 }
 
 .about__content-item {
@@ -659,17 +669,38 @@ body {
     fill: #57a4ff;
 }
 
+@media (max-width: 575px) {
+    .about__content-icon--mouse {
+        margin-right: .4rem;
+    }
+}
+
 .about__content-title {
     font-family: "Roboto", sans-serif;
     font-size: 2.8rem;
     padding-left: 2.3rem;
 }
 
+@media (max-width: 575px) {
+    .about__content-title {
+        padding-left: 1.5rem;
+    }
+}
+
 .about__content-down {
     margin-top: 2.5rem;
 }
 
+@media (max-width: 575px) {
+    .about__content-down {
+        margin-top: 1.8rem;
+    }
+}
+
 .about__content-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 1.6rem;
     max-width: 35rem;
     text-align: left;
 }
@@ -681,6 +712,7 @@ body {
 .tech {
     background: #224c69;
     background-size: cover;
+    overflow: hidden !important;
 }
 
 .tech__content {
@@ -710,6 +742,12 @@ body {
     font-size: 4rem;
     font-weight: normal;
     line-height: 1.2;
+}
+
+@media (max-width: 575px) {
+    .tech__content-title {
+        font-size: 1rem;
+    }
 }
 
 .tech__content-text {
