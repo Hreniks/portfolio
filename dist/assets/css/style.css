@@ -478,7 +478,7 @@ body {
 }
 
 .header__subtitle {
-    width: 26.3rem;
+    width: 100%;
     padding-top: 3rem;
     padding-bottom: 3rem;
     font-size: 2.2rem;
@@ -711,12 +711,16 @@ body {
 
 .tech {
     background: #224c69;
-    background-size: cover;
-    overflow: hidden !important;
+    padding: 20rem 0;
+}
+
+@media (max-width: 575px) {
+    .tech {
+        padding: 5rem 0;
+    }
 }
 
 .tech__content {
-    height: 100vh;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -725,14 +729,37 @@ body {
     align-items: center;
 }
 
+@media (max-width: 575px) {
+    .tech__content {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
 .tech__content-left {
     width: 40%;
+}
+
+@media (max-width: 575px) {
+    .tech__content-left {
+        width: 100%;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
 }
 
 .tech__content-right {
     width: 60%;
     -webkit-transform: rotate(-50deg);
     transform: rotate(-50deg);
+}
+
+@media (max-width: 575px) {
+    .tech__content-right {
+        width: 100%;
+        -webkit-transform: none;
+        transform: none;
+    }
 }
 
 .tech__content-title {
@@ -746,7 +773,8 @@ body {
 
 @media (max-width: 575px) {
     .tech__content-title {
-        font-size: 1rem;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
     }
 }
 
@@ -759,6 +787,12 @@ body {
 
 .tech__content-text p {
     margin-bottom: 5rem;
+}
+
+@media (max-width: 575px) {
+    .tech__content-text p {
+        margin-bottom: 3rem;
+    }
 }
 
 .tech__content-text p:last-child {
@@ -791,13 +825,33 @@ body {
     transition: background-color .4s linear;
 }
 
+@media (max-width: 575px) {
+    .tech__blocks-item {
+        width: 30%;
+        height: 13.5rem;
+    }
+}
+
 .tech__blocks-item-content {
     -webkit-transform: rotate(50deg);
     transform: rotate(50deg);
 }
 
+@media (max-width: 575px) {
+    .tech__blocks-item-content {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
 .tech__blocks-item--4 {
     margin-left: 15rem;
+}
+
+@media (max-width: 575px) {
+    .tech__blocks-item--4 {
+        margin-left: 0.3rem;
+    }
 }
 
 .tech__blocks-item:hover {

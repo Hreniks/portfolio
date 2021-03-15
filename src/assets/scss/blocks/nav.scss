@@ -5,13 +5,13 @@
     // padding-right: 20rem;
     
 
-    @include breakpoint($iphone6){
+    @include breakpoint($mobile){
         display: none;
+        padding: 0;
     }
 
-    @include breakpoint($iphone6plus){
-        display: none;
-    }
+
+
 }
 
 .nav__list {

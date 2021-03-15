@@ -2,6 +2,11 @@
     padding: 15rem 0;
     background: linear-gradient(to right, #1163cd, #973ddb);
 
+    @include breakpoint($mobile){
+        padding: 8rem 0;
+        padding-top: 2rem;
+    }
+
     &__content{
         
 
@@ -9,8 +14,15 @@
         justify-content: center;
         align-items: center;
 
+
+        @include breakpoint($mobile){
+            flex-direction: column-reverse;
+        }
+
         &-left {
             width: 55rem;
+
+            
             
             overflow: hidden;
             padding: 5rem;
@@ -22,9 +34,6 @@
             &__header{
                 display: flex;
                 align-items: center;
-                
-
-                
             }
 
 
@@ -40,21 +49,43 @@
                 padding-left: 0;
                 padding-bottom: 0;
                 
+                @include breakpoint($mobile){
+                    font-size: 1.8rem;
+                }
+
             }
 
+            @include breakpoint($mobile){
+                width: 100%;
 
+                padding: 2rem;
+            }
         }
     
         &-right {
             width: 50%;
             
+            @include breakpoint($mobile){
+                width: 100%;
+            }
             
 
             &-img{
                 display: block;
                 
                 margin: 0 auto;
-                margin-left: 15rem;
+                // margin-left: 15rem;
+
+                @include breakpoint($mobile){
+                    margin-left: auto;
+
+                    width: 30rem;
+                    height: 29rem;
+                }
+
+                @include breakpoint($iphone5){
+                    width: 26.5rem;
+                }
             }
         }
     }
@@ -82,7 +113,7 @@
 
     input{
         font-family: $ff;
-        
+        font-size: 2rem;                                    
 
         display: block;
         background: rgba(0, 0, 0, 0.1);

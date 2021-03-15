@@ -4,7 +4,7 @@
 
     @include breakpoint($mobile) {
         padding: 5rem 0;
-        
+
     }
 
     // background-size: cover;
@@ -46,7 +46,7 @@
 
     @include breakpoint($mobile) {
         flex-direction: column;
-        
+
     }
 
     &-left {
@@ -68,10 +68,14 @@
             width: 100%;
             transform: none;
         }
+
+        @include breakpoint($ipad) {
+            width: 75%;
+        }
     }
 
     &-title {
-        max-width: 40rem;
+        //max-width: 40rem;
         margin-bottom: 6rem;
 
         font-family: Myriad Pro, sans-serif;
@@ -81,13 +85,13 @@
 
         @include breakpoint($mobile) {
             font-size: 2.5rem;
-            
+
             margin-bottom: 3rem;
         }
     }
 
     &-text {
-        max-width: 45rem;
+        //max-width: 45rem;
 
         font-family: $ff;
         font-size: 1.8rem;
@@ -134,13 +138,18 @@
         transition: background-color .4s linear;
 
         @include breakpoint($mobile) {
-            width: 30%;
+            width: 31.3%;
             height: 13.5rem;
+        }
+
+        @include breakpoint($iphone5) {
+            width: 47%;
+            height: 15rem;
         }
 
         &-content {
             transform: rotate(50deg);
-            
+
             @include breakpoint($mobile) {
                 transform: none;
             }
@@ -175,18 +184,31 @@
         &--gulp {
             width: 6rem;
             height: 6rem;
+
+            @include breakpoint($mobile) {
+                margin-top: -1rem;
+            }
         }
 
         &--sass {
             padding-left: 0.5rem;
+
         }
 
         &--css {
             margin-top: .5rem;
+
+            @include breakpoint($mobile) {
+                margin-top: 0;
+            }
         }
 
         &--git {
             margin-top: 1rem;
+
+            @include breakpoint($mobile) {
+                margin-top: 0;
+            }
         }
     }
 
