@@ -69,9 +69,12 @@
             transform: none;
         }
 
-        @include breakpoint($ipad) {
+
+        @media(width: 1024px) {
             width: 75%;
         }
+
+
     }
 
     &-title {
@@ -138,7 +141,7 @@
         transition: background-color .4s linear;
 
         @include breakpoint($mobile) {
-            width: 31.3%;
+            width: 30%;
             height: 13.5rem;
         }
 

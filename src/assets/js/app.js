@@ -1,5 +1,18 @@
-let array = [3,6,5];
+$(document).ready(function(){
 
-document.body.addEventListener('click', event => {
-    console.log(event.targetb);
+
+    $('.nav__link').on( 'click', function(){ 
+        var el = $(this);
+        var dest = el.attr('href');
+        if(dest !== undefined && dest !== '') { 
+            $('html').animate({ 
+                scrollTop: $(dest).offset().top 
+            }, 500 
+            );
+        }
+        return false;
+    });
+
+
+    
 });

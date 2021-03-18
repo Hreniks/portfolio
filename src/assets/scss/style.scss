@@ -16,7 +16,7 @@ body {
     font-size: 1.4rem;
     line-height: 1.5;
     color: #fff;
-    
+    scroll-behavior: smooth;
 
 }
 
@@ -31,7 +31,9 @@ body {
 // Blocks 
 
 @import "./blocks/container";
+@import "./blocks/aside";
 @import "./blocks/header";
+@import "./blocks/burger";
 @import "./blocks/nav";
 @import "./blocks/page";
 @import "./blocks/about";

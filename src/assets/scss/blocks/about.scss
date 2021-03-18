@@ -55,6 +55,14 @@
                 margin-bottom: 0;
             }
         }
+
+        @media(width:1024px) {
+            margin-right: 1rem;
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
     }
 
     &-up {
