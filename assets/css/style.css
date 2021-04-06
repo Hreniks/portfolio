@@ -413,7 +413,6 @@ body {
 
 .header {
     width: 100%;
-    padding: 5rem 0;
     overflow: hidden;
     background: #00002c;
     position: relative;
@@ -441,13 +440,13 @@ body {
 }
 
 .header__inner {
+    padding-top: 25vh;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 100vh;
 }
 
 @media (max-width: 991px) {
@@ -606,7 +605,13 @@ body {
 }
 
 .nav {
-    padding-bottom: 2.4rem;
+    width: 100%;
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    z-index: 1;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 @media (max-width: 991px) {
@@ -703,24 +708,16 @@ body {
 .page {
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    position: relative;
 }
 
 .about {
     width: 100%;
-    padding: 30rem 0;
     background-image: url("../images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: #ffff;
-    position: relative;
-}
-
-@media (max-width: 991px) {
-    .about {
-        padding: 8rem 0;
-    }
 }
 
 .about:before {
@@ -736,6 +733,7 @@ body {
 }
 
 .about__content {
+    padding-top: 40vh;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
@@ -748,7 +746,7 @@ body {
     .about__content {
         -ms-flex-direction: column;
         flex-direction: column;
-        padding-top: 0;
+        padding-top: 10rem;
     }
 }
 
@@ -845,7 +843,6 @@ body {
 
 .tech {
     background: #224c69;
-    padding: 20rem 0;
 }
 
 @media (max-width: 991px) {
@@ -855,6 +852,7 @@ body {
 }
 
 .tech__content {
+    padding-top: 20rem;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -867,6 +865,7 @@ body {
     .tech__content {
         -ms-flex-direction: column;
         flex-direction: column;
+        padding-top: 3rem;
     }
 }
 
@@ -1059,11 +1058,12 @@ body {
 }
 
 .works {
-    padding: 5rem 0;
+    padding-top: 8rem;
     background-color: #181c24;
 }
 
 .works__slider {
+    padding: 5rem 0;
     width: 100%;
     height: 100%;
     display: -ms-flexbox;
@@ -1084,8 +1084,8 @@ body {
 }
 
 .works__slider-item {
-    width: 35rem;
-    height: 35rem;
+    width: 30rem;
+    height: 30rem;
     overflow: hidden;
     margin: 1rem;
     background-color: #353535;
@@ -1178,7 +1178,8 @@ body {
 }
 
 .form {
-    padding: 15rem 0;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     background: linear-gradient(to right, #1163cd, #973ddb);
 }
 
@@ -1190,6 +1191,7 @@ body {
 }
 
 .form__content {
+    height: 100%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -1405,8 +1407,20 @@ body {
 }
 
 .footer {
-    padding: 5rem 0;
     background-color: #181c24;
+}
+
+.footer__wrapper {
+    height: 100%;
+    height: 100vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .footer__content {
@@ -1438,4 +1452,104 @@ body {
 .footer__copyright {
     margin-top: 1.5rem;
     text-align: center;
+}
+
+/**-----------------------
+
+ docSlider.js - ver.3.0.1
+ URL : https://prjct-samwest.github.io/docSlider/
+ created by SamWest
+ Copyright (c) 2020 SamWest.
+ This plugin is released under the MIT License.
+
+ -----------------------**/
+/* CHANGE THE PAGER STYLE */
+.docSlider-pager {
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* CHANGE THE BUTTON STYLE */
+.docSlider-button {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    margin: 5px 0;
+    background-color: #333;
+    opacity: .25;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.docSlider-button.selected {
+    opacity: 1;
+}
+
+.docSlider-button:active {
+    outline: none;
+}
+
+/**------------------------------
+  REWRITING IS NOT RECOMMENDED
+ -----------------------------**/
+html, body {
+    overflow: hidden;
+    -ms-touch-action: none;
+    touch-action: none;
+    height: 100%;
+}
+
+html, body,
+.docSlider,
+.docSlider-inner,
+.docSlider-page {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+html:active, body:active,
+  .docSlider:active,
+  .docSlider-inner:active,
+  .docSlider-page:active {
+    outline: none;
+}
+
+.docSlider {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.docSlider-inner {
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.docSlider-page {
+    height: inherit;
+    width: inherit;
+    overflow: auto;
+    position: absolute;
+    overflow-scrolling: touch;
 }
