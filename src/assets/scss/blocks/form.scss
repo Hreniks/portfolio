@@ -1,14 +1,17 @@
 .form {
-    padding: 15rem 0;
+    // padding-top: 10rem;
+    // padding-bottom: 10rem;
     background: linear-gradient(to right, #1163cd, #973ddb);
-
+    //height: 100vh;
+    
     @include breakpoint($mobile){
-        padding: 8rem 0;
-        padding-top: 2rem;
+        // padding: 8rem 0;
+        // padding-top: 2rem;
     }
 
     &__content{
-        
+        //height: 100vh;
+        padding-top: 10rem;
 
         display: flex;
         justify-content: center;
@@ -17,13 +20,13 @@
 
         @include breakpoint($mobile){
             flex-direction: column-reverse;
+            padding-top: 1rem;
+            padding-bottom: 5rem;
         }
 
         &-left {
             width: 55rem;
 
-            
-            
             overflow: hidden;
             padding: 5rem;
 

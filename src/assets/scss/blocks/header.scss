@@ -1,11 +1,8 @@
 .header {
     width: 100%;
-
-    padding: 5rem 0;
-
+    
     overflow: hidden;
     
-
     background: #00002c;
 
     position: relative;
@@ -34,11 +31,12 @@
 }
 
 .header__inner {
+    padding-top: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
     //height: calc(100vh - 97.8px);
-    height: 100vh;
+    
 
 
     @include breakpoint($mobile) {

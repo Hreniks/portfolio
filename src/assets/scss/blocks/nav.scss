@@ -1,10 +1,12 @@
 .nav {
-    padding-bottom: 2.4rem;
+    width: 100%;
+    
     position: fixed;
-    top: 3rem;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    top: 1.5rem;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    
     
     @include breakpoint($mobile) {
         display: none;

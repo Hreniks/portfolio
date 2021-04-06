@@ -16,15 +16,18 @@ body {
     font-size: 1.4rem;
     line-height: 1.5;
     color: #fff;
-    scroll-behavior: smooth;
+    
 
 }
+
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
+
+
 
 
 
@@ -42,5 +45,6 @@ body {
 @import "./blocks/form";
 @import "./blocks/icons";
 @import "./blocks/footer";
+@import "./blocks/docSlider";
 
 
