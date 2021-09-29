@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'BigNoodleTitling Regular';
+    src: url('../fonts/big_noodle/big_noodle_titling.ttf');
+}
+
+@font-face {
+    font-family: 'BigNoodleTitling Oblique';
+    src: url('../fonts/big_noodle/big_noodle_titling_oblique.ttf');
+}
+
+@font-face {
+    font-family: 'MgOpenModata Regular';
+    src: url('../fonts/MgOpen_Modata/MgOpen_Modata_Regular.ttf');
+}
+
+

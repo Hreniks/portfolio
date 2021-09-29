@@ -1,0 +1,56 @@
+.text__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text__aside {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 300px;
+    width: 100%;
+
+    &-form {
+        position: sticky;
+        top: 100px;
+        padding: 15px;
+        width: 200px;
+        height: 400px;
+        background-color: darksalmon;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+
+        &-title {
+            margin-bottom: 20px;
+        }
+    }
+
+    &_form-login {
+        >input {
+            width: 100%;
+            height: 30px;
+        }
+
+        width: 100%;
+    }
+}
+
+.text__content{
+    font-size: 20px;
+    font-weight:300 ;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 150%;
+
+}
+
+.content_item fas fa-address-card{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.fa-air-freshener:hover{
+	color:gold;
+}

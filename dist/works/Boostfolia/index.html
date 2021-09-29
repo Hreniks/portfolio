@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@100;300;700&display=swap"
+        rel="stylesheet">
+
+    <title>Boostfolia</title>
+</head>
+
+<body>
+    <!-- sprite -->
+    <svg style="display: none;">
+        <symbol id="facebook" viewBox="0 0 24 24">
+            <g>
+                <path
+                    d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z" />
+            </g>
+        </symbol>
+
+        <symbol id="linkedin" viewBox="0 0 512 512">
+            <g>
+                <path
+                    d="m475.074219 0h-438.148438c-20.394531 0-36.925781 16.53125-36.925781 36.925781v438.148438c0 20.394531 16.53125 36.925781 36.925781 36.925781h438.148438c20.394531 0 36.925781-16.53125 36.925781-36.925781v-438.148438c0-20.394531-16.53125-36.925781-36.925781-36.925781zm-293.464844 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0" />
+            </g>
+        </symbol>
+
+        <symbol id="twitter" viewBox="0 0 512 512">
+            <g>
+                <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			C480.224,136.96,497.728,118.496,512,97.248z" />
+            </g>
+        </symbol>
+
+        <symbol id="right" viewBox="0 0 32 32">
+            <g id="icomoon-ignore">
+
+            </g>
+            <path
+                d="M19.159 16.767l0.754-0.754-6.035-6.035-0.754 0.754 5.281 5.281-5.256 5.256 0.754 0.754 3.013-3.013z"
+                fill="#3a3939"></path>
+        </symbol>
+
+        <symbol id="left" viewBox="0 0 32 32">
+            <g id="icomoon-ignore">
+            </g>
+            <path
+                d="M12.792 15.233l-0.754 0.754 6.035 6.035 0.754-0.754-5.281-5.281 5.256-5.256-0.754-0.754-3.013 3.013z"
+                fill="#3a3939"></path>
+        </symbol>
+    </svg>
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header__menu">
+                <div class="header__logo">
+                    <img src="./img/logo.png" alt="" class="header__img">
+                    <span class="header__text">BOOSTFOLIA</span>
+
+                </div>
+                <button class="burger" type="button">
+                    <span class="burger__item">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+
+            <div class="intro__inner slider">
+                <div class="slider__item">
+                    <h1 class="intro__title">WE THINK CREATIVE BE CREATIVE</h1>
+                    <h2 class="intro__subtitle">LIKE TO DO CREATIVE WORKS</h2>
+                </div>
+                <div class="slider__item">
+                    <h1 class="intro__title">THIS IS A SLIDER</h1>
+                    <h2 class="intro__subtitle">SlickJS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="mouse">
+            <img src="./img/mouse.png" alt="">
+            <p class="mouse__text">scroll down</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about__text">
+                <h2 class="about__title title">about us
+                    <!-- <hr class="about__hr"> -->
+                </h2>
+                <p class="about__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div class="about__blocks">
+                <div class="about__item">
+                    <div class="about__img">
+                        <img src="./img/valik.png" alt="">
+                    </div>
+                    <h3 class="about__item__title">CREATIVE DESIGN</h3>
+                    <div class="about__item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do . .
+                        .</div>
+                </div>
+                <div class="about__item">
+                    <div class="about__img">
+                        <img src="./img/portf.png" alt="">
+                    </div>
+                    <h3 class="about__item__title">UNIQU PORTFOLIO</h3>
+                    <div class="about__item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do . .
+                        .</div>
+                </div>
+                <div class="about__item">
+                    <div class="about__img">
+                        <img src="./img/infinity.png" alt="">
+                    </div>
+                    <h3 class="about__item__title">INFINITE UPDATES</h3>
+                    <div class="about__item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do . .
+                        .</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video">
+        <div class="video__text">
+            <h2 class="video__title">WATCH BEHIND THE SCENE</h2>
+            <p class="video__subtitle">Lorem ipsum dolo the lorem r sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            </p>
+            <button class="video__btn-red">PLAY NOW</button>
+        </div>
+        <div class="video__player">
+            <div class='containerc'>
+                <a href='#' class='playBut'>
+
+                    <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="213.7px"
+                        height="213.7px" viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7"
+                        xml:space="preserve">
+
+                        <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-miterlimit="10" points="
+                  73.5,62.5 148.5,105.8 73.5,149.1 " />
+
+                        <circle class='circle' id="XMLID_17_" fill="none" stroke-width="7" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="works">
+        <div class="container">
+            <div class="works__text">
+                <h2 class="works__title title">OUR WORKS</h2>
+                <p class="works__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div class="works__type">
+                <h3 class="works__type__item">ALL PROJECTS</h3>
+                <h3 class="works__type__item">PHOTOGRAPHY</h3>
+                <h3 class="works__type__item">WEB DESIGN</h3>
+                <h3 class="works__type__item">BRANDING</h3>
+                <h3 class="works__type__item">MOBILE APP</h3>
+            </div>
+        </div>
+        <div class="works__blocks">
+            <div class="works__item"></div>
+            <div class="works__item"></div>
+            <div class="works__item"></div>
+            <div class="works__item"></div>
+            <div class="works__item"></div>
+            <div class="works__item"></div>
+            <div class="works__item"></div>
+            <div class="works__item"></div>
+            <div class="works__item"></div>
+        </div>
+    </div>
+
+
+    <section class="partners">
+        <div class="container">
+            <div class="partners__slider">
+                <div class="partners__item">
+                    <div class="item__container">
+                        <img src="./img/partners_img1.png" alt="" class="partners__img">
+                        <h3 class="partners__name">themeforest</h3>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <div class="item__container">
+                        <img src="./img/partners_img2.png" alt="" class="partners__img partners__img2">
+                        <h3 class="partners__name">graphicriver</h3>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <div class="item__container">
+                        <img src="./img/partners_img3.png" alt="" class="partners__img">
+                        <h3 class="partners__name">videohive</h3>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <div class="item__container">
+                        <img src="./img/partners_img1.png" alt="" class="partners__img">
+                        <h3 class="partners__name">themeforest</h3>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <div class="item__container">
+                        <img src="./img/partners_img2.png" alt="" class="partners__img partners__img2">
+                        <h3 class="partners__name">graphicriver</h3>
+                    </div>
+                </div>
+                <div class="partners__item">
+                    <div class="item__container">
+                        <img src="./img/partners_img3.png" alt="" class="partners__img">
+                        <h3 class="partners__name">videohive</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="whoweare">
+        <div class="container">
+            <div class="whoweare__text">
+                <h2 class="whoweare__title title">WHO WE ARE</h2>
+                <p class="whoweare__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do
+                    eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <div class="whoweare__content">
+                <div class="whoweare--left">
+                    <div class="whoweare__person">
+                        <div class="whoweare__photo"></div>
+                        <div class="whoweare__name">IGOR FADEEV</div>
+                        <div class="whoweare__position">Programmer</div>
+                        <div class="social">
+                            <a href="" class="social__item" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#linkedin">
+                                </svg>
+                            </a>
+                            <a href="" class="social__item" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#twitter">
+                                </svg>
+                            </a>
+                            <a href="" class="social__item" target="_blank">
+                                <svg class="social__icon">
+                                    <use xlink:href="#facebook">
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="whoweare--right">
+                    <div class="whoweare__text--right">
+                        <div class="whoweare__title--right">MY SKILLS</div>
+                        <div class="whoweare__subtitle--right">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipisicing elit, sed
+                            do eiusmod tempor.</div>
+                        <div class="whoweare__skill">
+                            <div class="whoweare__skill__item">
+                                <span class="whoweare__skill__name">Photoshop</span>
+                                <div class="whoweare__skill__line">
+                                    <div class="whoweare__skill__line--fill" style="width: 88%;height: 100%"></div>
+                                </div>
+                                <div class="whoweare__skill__percent">88%</div>
+                            </div>
+                            <div class="whoweare__skill__item">
+                                <span class="whoweare__skill__name">Illustrator</span>
+                                <div class="whoweare__skill__line">
+                                    <div class="whoweare__skill__line--fill" style="width: 92%;height: 100%"></div>
+                                </div>
+                                <div class="whoweare__skill__percent">92%</div>
+                            </div>
+                            <div class="whoweare__skill__item">
+                                <span class="whoweare__skill__name">Sketch</span>
+                                <div class="whoweare__skill__line">
+                                    <div class="whoweare__skill__line--fill" style="width: 90%;height: 100%"></div>
+                                </div>
+                                <div class="whoweare__skill__percent">90%</div>
+                            </div>
+                            <div class="whoweare__skill__item">
+                                <span class="whoweare__skill__name">After Effects</span>
+                                <div class="whoweare__skill__line">
+                                    <div class="whoweare__skill__line--fill" style="width: 98%;height: 100%"></div>
+                                </div>
+                                <div class="whoweare__skill__percent">98%</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="features__text">
+                <h2 class="features__title title">SOME FEATURES</h2>
+            </div>
+
+            <div class="features__blocks">
+                <div class="features__item">
+                    <div class="features__img">
+                        <img src="./img/features1.png" class="features__icon" alt="">
+                    </div>
+                    <div class="features__name">Shortcodes</div>
+                    <div class="features__number">46</div>
+                </div>
+                <div class="features__item">
+                    <div class="features__img">
+                        <img src="./img/features2.png" class="features__icon" alt="">
+                    </div>
+                    <div class="features__name">Integrated Plugins</div>
+                    <div class="features__number">128</div>
+                </div>
+                <div class="features__item">
+                    <div class="features__img">
+                        <img src="./img/features3.png" class="features__icon" alt="">
+                    </div>
+                    <div class="features__name">Creative Products</div>
+                    <div class="features__number">46</div>
+                </div>
+                <div class="features__item">
+                    <div class="features__img">
+                        <img src="./img/features4.png" class="features__icon" alt="">
+                    </div>
+                    <div class="features__name">Clients Worldwide</div>
+                    <div class="features__number">100+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="blog">
+        <div class="container">
+            <div class="blog__text">
+                <div class="blog__title title">BLOG POSTS</div>
+                <div class="blog__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+            </div>
+            <div class="blog__posts">
+                <div class="blog__item">
+                    <div class="blog__img">
+                        <img src="./img/blog-pic.png" alt="" class="blog__picture">
+                        <div class="blog__img__buttons">
+                            <div class="blog__img__button__clip">
+                                <img src="./img/clip.png" alt="" class="blog__img__button__clip__icon">
+                            </div>
+                            <div class="blog__img__button__eye">
+                                <img src="./img/eye.png" alt="" class="blog__img__button__eye__icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item__text">
+                        <div class="blog__item__title">Creat Creative & Clean</div>
+                        <div class="blog__item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        <div class="blog__item__bottom">
+                            <div class="blog__item__bottom--left">
+                                <img src="./img/time-icon.png" alt="" class="blog__item__bottom__time__icon">
+                                <span class="blog__item__bottom__date">25 Jan 2015</span>
+                            </div>
+                            <div class="blog__item__bottom--right">
+                                <img src="./img/like-icon.png" alt="" class="blog__item__bottom__like__icon">
+                                <span class="blog__item__bottom__likes">25</span>
+                                <img src="./img/comment-icon.png" alt="" class="blog__item__bottom__comment__icon">
+                                <span class="blog__item__bottom__comments">11</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="blog__item">
+                    <div class="blog__img">
+                        <img src="./img/blog-pic.png" alt="" class="blog__picture">
+                        <div class="blog__img__buttons">
+                            <div class="blog__img__button__clip">
+                                <img src="./img/clip.png" alt="" class="blog__img__button__clip__icon">
+                            </div>
+                            <div class="blog__img__button__eye">
+                                <img src="./img/eye.png" alt="" class="blog__img__button__eye__icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item__text">
+                        <div class="blog__item__title">Make A Sleek Break</div>
+                        <div class="blog__item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        <div class="blog__item__bottom">
+                            <div class="blog__item__bottom--left">
+                                <img src="./img/time-icon.png" alt="" class="blog__item__bottom__time__icon">
+                                <span class="blog__item__bottom__date">25 Jan 2015</span>
+                            </div>
+                            <div class="blog__item__bottom--right">
+                                <img src="./img/like-icon.png" alt="" class="blog__item__bottom__like__icon">
+                                <span class="blog__item__bottom__likes">25</span>
+                                <img src="./img/comment-icon.png" alt="" class="blog__item__bottom__comment__icon">
+                                <span class="blog__item__bottom__comments">11</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="blog__item">
+                    <div class="blog__img">
+                        <img src="./img/blog-pic.png" alt="" class="blog__picture">
+                        <div class="blog__img__buttons">
+                            <div class="blog__img__button__clip">
+                                <img src="./img/clip.png" alt="" class="blog__img__button__clip__icon">
+                            </div>
+                            <div class="blog__img__button__eye">
+                                <img src="./img/eye.png" alt="" class="blog__img__button__eye__icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item__text">
+                        <div class="blog__item__title">Creative Manipulations</div>
+                        <div class="blog__item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        <div class="blog__item__bottom">
+                            <div class="blog__item__bottom--left">
+                                <img src="./img/time-icon.png" alt="" class="blog__item__bottom__time__icon">
+                                <span class="blog__item__bottom__date">25 Jan 2015</span>
+                            </div>
+                            <div class="blog__item__bottom--right">
+                                <img src="./img/like-icon.png" alt="" class="blog__item__bottom__like__icon">
+                                <span class="blog__item__bottom__likes">25</span>
+                                <img src="./img/comment-icon.png" alt="" class="blog__item__bottom__comment__icon">
+                                <span class="blog__item__bottom__comments">11</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="plan">
+        <div class="container">
+            <div class="plan__text">
+                <h2 class="plan__title title">CHOSE PLAN</h2>
+            </div>
+
+            <div class="plan__blocks">
+                <div class="plan__item">
+                    <div class="plan__item__title">
+                        <div class="plan__item__name">BASIC</div>
+                        <div class="plan__item__price">Free</div>
+                    </div>
+                    <div class="plan__info">
+                        <div class="plan__info__name">
+                            <span class="plan__count">20</span>
+                            Pages
+                        </div>
+                        <div class="plan__info__name">
+                            <span class="plan__count">2</span>
+                            GB Storage
+                        </div>
+                        <div class="plan__info__name">
+                            <span class="plan__count">150</span>
+                            Members
+                        </div>
+                        <div class="plan__info__name">
+                            <span class="plan__count">2</span>
+                            Contributors
+                        </div>
+                    </div>
+                    <button class="plan__purchase">PURCHASE</button>
+                </div>
+                <div class="plan__item">
+                    <div class="plan__item__title">
+                        <div class="plan__item__name">STANDART</div>
+                        <div class="plan__item__price"><span style="font-size: 25px;">$</span>24.00</div>
+                    </div>
+                    <div class="plan__info">
+                        <div class="plan__info__name">
+                            <span class="plan__count">25</span>
+                            Pages
+                        </div>
+                        <div class="plan__info__name">
+                            <span class="plan__count">10</span>
+                            GB Storage
+                        </div>
+                        <div class="plan__info__name">
+                            <span class="plan__count">300</span>
+                            Members
+                        </div>
+                        <div class="plan__info__name">
+                            <span class="plan__count">5</span>
+                            Contributors
+                        </div>
+                    </div>
+                    <button class="plan__purchase">PURCHASE</button>
+                </div>
+                <div class="plan__item">
+                    <div class="plan__item__title">
+                        <div class="plan__item__name">PREMIUM</div>
+                        <div class="plan__item__price"><span style="font-size: 25px;">$</span>40.00</div>
+                    </div>
+                    <div class="plan__info">
+                        <div class="plan__info__name">
+                            <span class="plan__count">30</span>
+                            Pages
+                        </div>
+                        <div class="plan__info__name">
+                            <span class="plan__count">20</span>
+                            GB Storage
+                        </div>
+                        <div class="plan__info__name">
+                            <span class="plan__count">500</span>
+                            Members
+                        </div>
+                        <div class="plan__info__name">
+                            <span class="plan__count">10</span>
+                            Contributors
+                        </div>
+                    </div>
+                    <button class="plan__purchase">PURCHASE</button>
+                </div>
+                <div class="plan__item">
+                    <div class="plan__item__title">
+                        <div class="plan__item__name">PROFFESIONAL</div>
+                        <div class="plan__item__price"><span style="font-size: 25px;">$</span>75.00</div>
+                    </div>
+                    <div class="plan__info">
+                        <div class="plan__info__name">
+                            <span class="plan__count">40</span>
+                            Pages
+                        </div>
+                        <div class="plan__info__name">
+                            <span class="plan__count">40</span>
+                            GB Storage
+                        </div>
+                        <div class="plan__info__name">
+                            <span class="plan__count">1000</span>
+                            Members
+                        </div>
+                        <div class="plan__info__name">
+                            <span class="plan__count">20</span>
+                            Contributors
+                        </div>
+                    </div>
+                    <button class="plan__purchase">PURCHASE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="form1">
+        <div class="container">
+            <div class="form__text">
+                <div class="form__title title">GET IN TOUCH</div>
+                <div class="form__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+            </div>
+
+            <form action="" id="form" class="form">
+                <div class="form__upper">
+                    <div class="form__item">
+                        <div class="form__name">
+                            Name <span style="color: #f6744b;">*</span>
+                        </div>
+                        <input type="text" class="form__input" form="#form">
+                    </div>
+                    <div class="form__item">
+                        <div class="form__name">
+                            Mail<span style="color: #f6744b;">*</span>
+                        </div>
+                        <input type="text" class="form__input" form="#form">
+                    </div>
+                </div>
+                <div class="form__bottom">
+                    <div class="form__item form__item-bot">
+                        <div class="form__name form__name-bot">
+                            Message <span style="color: #f6744b;">*</span>
+                        </div>
+                        <input type="text" class="form__input form__input-bot" form="#form">
+                    </div>
+                </div>
+
+                <button class="form__btn" type="submit" form="form">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="map">
+        <div class="container">
+            <div class="map__text">
+                <div class="map__title">LOCATE ON MAP
+                    <span class="map__arrow" style="color: #f6744b; cursor: pointer;">ᐯ</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <img src="./img/Logo.png" alt="" class="footer__logo">
+                <div class="footer__title">BOOSTFOLIA</div>
+                <div class="footer__subtitle">MADE WITH LOVE BY CREATIVEPRODUCT</div>
+                <div class="social">
+                    <a href="" class="social__item" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#linkedin">
+                        </svg>
+                    </a>
+                    <a href="" class="social__item" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#twitter">
+                        </svg>
+                    </a>
+                    <a href="" class="social__item" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#facebook">
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slider').slick({
+                autoplay: true,
+                arrows: true,
+                nextArrow: '<svg class="rightbtn"><use xlink:href="#right"></svg>',
+                prevArrow: '<svg class="leftbtn"><use xlink:href="#left"></svg>'
+            });
+        });
+
+
+
+        $('.mouse').click(function () {
+            $('html, body').animate({
+                scrollTop: $('.about').offset().top
+            }, 500);
+        });
+
+
+        // $(document).ready(function () {
+        //     $('.partners__slider').slick({
+        //         autoplay: true,
+        //         slidesToShow: 3,
+        //         slidesToScroll: 1,
+        //         arrows: true,
+        //         nextArrow: '<svg class="rightbtn"><use xlink:href="#right"></svg>',
+        //         prevArrow: '<svg class="leftbtn"><use xlink:href="#left"></svg>'
+        //     });
+        // });
+
+    </script>
+</body>
+
+</html>

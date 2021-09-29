@@ -1,0 +1,69 @@
+@import "vars";
+@import './blocks/mixsins';
+@import "./vendor/reset.scss";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe\ UI, Roboto, Helvetica\ Neue, Arial, Noto\ Sans, sans-serif;
+    background-color: $bgcolor;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $white;
+
+    &.no-scroll,
+    &.show-sidebar{
+        overflow: hidden;
+    }
+
+    @include breakpoint($tablet-bp){
+        &.show-sidebar{
+            overflow: hidden;
+        } 
+     }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+a {
+    
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// Blocks 
+@import "./blocks/sidebar";
+@import "./blocks/page";
+@import "./blocks/main";
+@import "./blocks/header";
+@import './blocks/burger';
+@import './blocks/nav';
+@import "./blocks/container";
+@import './blocks/profile';
+@import './blocks/social';
+@import './blocks/btn';
+@import './blocks/search';
+@import './blocks/subnav';
+@import './blocks/stories';
+@import './blocks/add-post';
+@import './blocks/post';
+@import './blocks/embed';
+@import './blocks/pagination';
+@import './blocks/related';
+@import './blocks/comments';
+@import './blocks/form';
+@import './blocks/work';
+@import './blocks/tags';
+@import './blocks/cabinet';
+@import './blocks/modal';

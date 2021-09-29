@@ -1,0 +1,131 @@
+.testimonials{
+    width: 100%;
+    
+    background: url(../img/testimonials/bg.jpg) no-repeat center;
+    
+    background-size: cover;
+    position: relative;
+
+}
+
+.testimonials::before{
+    content: '';
+    background: url(../img/testimonials/bgb.jpg) no-repeat center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    left: 0;
+    
+}
+
+.testimonials__container{
+    position: relative;
+    display: inline-block;
+    padding: 0 80px;
+    display: flex;
+}
+
+.testimonials__left-container{
+    
+    width: 42%;
+    padding: 100px 0;
+}
+
+.testimonials__title{
+    width: 550px;
+    height: 120px;
+    
+    font-size: 40px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: left;
+    
+
+    margin-bottom: 25px;
+      
+      
+}
+
+.testimonials__text{
+        width: 555px;
+        font-size: 15px;
+        font-family: "Raleway";
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        line-height: 1.667;
+        text-align: left;
+
+        margin-bottom: 75px;
+        
+      
+}
+
+.testimonials__btn{
+    background-color: #061e37;
+}
+
+.slider{
+    width: 100%;
+    height: 100%;
+}
+
+.slider__container{
+    padding-top: 65px;
+    padding-bottom: 55px;
+    height: 100%;
+}
+
+.slider__item{
+    display: flex;
+    
+    
+    margin-bottom: 50px;
+}
+
+.slider__item-img{
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.slider__img{
+    border-radius: 50%;
+
+}
+
+.slider__item-text{
+    background-color: #fff;
+    border-radius: 5px;
+    height: 148px;
+    padding: 20px;
+}
+
+.slider__title{
+    
+    font-size: 18px;
+    font-family: "Raleway";
+    color: rgb(6, 30, 55);
+    font-weight: bold;
+    line-height: 1.389;
+    text-align: left;    
+    
+    margin-bottom: 10px;
+
+}
+
+.slider__text{
+    
+    font-size: 15px;
+    font-family: "Raleway";
+    color: rgb(120, 144, 156);
+    line-height: 1.667;
+    text-align: left;
+      
+}
