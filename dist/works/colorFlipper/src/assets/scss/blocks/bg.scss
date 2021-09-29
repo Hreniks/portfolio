@@ -1,0 +1,46 @@
+.bg {
+    height: calc(100vh - 3rem);
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+
+    &__content {
+        padding: 1rem 6rem;
+
+        margin: 0 auto;
+        background-color: #000;
+        border-radius: 4px;
+
+        display: flex;
+
+        align-items: baseline;
+    }
+
+    span {
+        font-size: 3rem;
+        color: #fff;
+        letter-spacing: 2px;
+        padding-left: 1rem;
+        font-weight: bold;
+    }
+
+
+
+
+    .change {
+        width: 15rem;
+        position: absolute;
+        bottom: 20rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background: none;
+        border: 2px solid #000;
+        outline: none;
+        border-radius: 4px;
+        padding: 1rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+        
+    }
+}

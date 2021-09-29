@@ -1,0 +1,90 @@
+.slider {
+
+    width: 100%;
+    height: 475px;
+
+    position: relative;
+
+
+    &-slide {
+        background: url("../img/slide-1.jpg") no-repeat center center;
+        background-size: cover;
+    }
+
+
+    &__text {
+        font-family: "Open Sans";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.5;
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 192.3px 0;
+        margin-left: 236px;
+
+        // position: absolute;
+        // left: 236px;
+        // top: 50%;
+        // z-index: 1;
+        // transform: translateY(-50%);
+
+
+        span {
+            background-color: rgba($color: #000, $alpha: .5);
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        &--upper {
+            font-size: 30px;
+            font-weight: 300;
+            max-width: 286px;
+            margin-bottom: 4px;
+        }
+
+        &--bottom {
+            font-size: 28px;
+            font-weight: 700;
+            max-width: 330px;
+        }
+    }
+
+    &__button {
+        &-arrow {
+            width: 70px;
+            height: 70px;
+            background-color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+
+            i {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                color: grey;
+
+            }
+        }
+
+        &-prev {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 120px;
+            z-index: 1;
+        }
+
+        &-next {
+            position: absolute;
+            right: 120px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+.our-team__container{
+    
+    margin: 0 475px;
+}
+
+.our-team__img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.our-team__main-img{
+    margin: 0 50px;
+    position: relative;
+}
+
+.our-team__main-img::before{
+    content: "";
+    background: url(../img/our-team/Ellipse.png) no-repeat center;
+    position: absolute;
+    width: 214px;
+    height: 214px;
+    left: -25px;
+    top: -25px;
+    
+}
+
+.our-team__text-container{
+    
+    width: 100%;
+    text-align: center;
+}
+
+.our-team__title{
+    
+    text-align: center;
+
+    font-size: 18px;
+    font-family: "Raleway";
+    color: rgb(6, 30, 55);
+    font-weight: bold;
+    line-height: 1.389;
+       
+    margin-bottom: 20px;
+}
+
+.our-team__text{
+    font-family: "Raleway";
+    font-size: 14px;
+    color: rgb(144, 164, 174);
+    line-height: 1.667;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.our-team__icons{
+    
+}
+
+.our-team__ul{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.our-team__li{
+   
+    margin-right: 30px;
+}
+
+.our-team__li:last-child{
+    margin-right: 0px;
+}

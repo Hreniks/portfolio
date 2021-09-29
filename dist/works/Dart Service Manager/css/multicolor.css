@@ -1,0 +1,64 @@
+.multicolor__container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.multicolor__item{
+    width: 400px;
+    height: 150px;
+    display: flex;
+    
+   
+
+   
+    font-size: 20px;
+    font-family: "Raleway";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: left;
+    align-items: center;
+        
+      
+}
+.multicolor__img-container{
+    width: 50%;
+    position: relative;
+}
+
+.multicolor__circle{
+    position: relative;
+    left: 95px;
+    top: 0px;
+    
+}
+
+.multicolor__img{
+    position: relative;
+    left: 47px;
+    top: -18px;
+    
+}
+
+.multicolor__text{
+    width: 50%;
+    margin-left: -15px;
+}
+
+.item1{
+    background-color: #80d8ff;
+}
+
+.item2{
+    background-color: #82b1ff;
+}
+
+.item3{
+    background-color: #b388ff;
+}
+
+.item4{
+    background-color: #ea80fc;
+}

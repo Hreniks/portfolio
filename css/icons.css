@@ -1,0 +1,40 @@
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icons-form {
+  width: 50%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.icons__item {
+  margin-right: 1rem;
+}
+
+.icons__item:last-child {
+  margin-right: 0;
+}
+
+.icons__item-icon-footer {
+  width: 45px;
+  height: 45px;
+  -webkit-transition: fill .2s linear;
+  transition: fill .2s linear;
+}
+
+.icons__item-icon-footer:hover {
+  fill: #fff;
+}
+
+.icons__item-icon-footer-telegram:hover {
+  fill: #08c;
+}
+
+.icons__item-icon-footer-phone:hover {
+  fill: #00ff00;
+}
+/*# sourceMappingURL=icons.css.map */

@@ -1,0 +1,140 @@
+.faq{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.faq-item{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-bottom: 20px;
+}
+
+.faq-upper-container{
+    display: flex;
+}
+
+.material-icons{
+    position: absolute;
+    top: 7px;
+}
+
+.faq-title-text{
+    display: inline-block;
+    color: #061e37;
+    font-size: 15px;
+    font-family: "Raleway";
+    color: rgb(6, 30, 55);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-left: 40px;
+}
+
+
+.faq-img-left{
+    
+   
+    padding-top: 1px;
+    padding-left: 20px;
+    
+    transition: background .2s ease-out;
+}
+
+.faq-container{
+    display: none;
+    flex-direction: row;
+    padding: 20px 0;
+}
+
+.faq-title{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 0;
+    position: relative;
+    padding-left: 20px;
+    
+    
+    color: #061e37;
+    font-size: 15px;
+    font-family: "Raleway";
+    color: rgb(6, 30, 55);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+        
+    transition: background .2s ease-out;  
+}
+
+.faq-img{
+    padding: 10px 25px;
+    float: left;
+   
+}
+
+.faq-title::after{
+    content: "";
+    display: block;
+
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #061e37 transparent transparent transparent;
+
+    position: absolute;
+    top: 50%;
+    right: 20px;
+
+    transform: translateY(-50%);
+}
+
+.faq-title:hover{
+    background-color:rgb(176, 190, 197);
+}
+
+.faq-img-left:hover{
+    background-color:rgb(176, 190, 197);
+}
+
+.faq-input{
+    width: 0;
+    height: 0;
+    appearance: none;
+    
+    position: absolute;
+}
+
+
+.faq-input:checked ~ .faq-title{
+    background-color:rgb(176, 190, 197);
+}
+
+.faq-input:checked ~ .faq-title:after{
+    border-style: solid;
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent #061e37 transparent;
+}
+
+.faq-input:checked ~ .faq-container{
+    display: block;
+}
+
+
+
+.faq-text{
+    padding: 5px 21px;
+    color: #061e37;
+    font-size: 15px;
+    font-family: "Raleway";
+    color: rgb(6, 30, 55);
+    line-height: 1.667;
+        
+      
+}
+
+
