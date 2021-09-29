@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,CAAA;EACN,SAAS,EAAE,MAAM;EACjB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,MAAM;EACf,QAAQ,EAAE,QAAQ;CAOrB;;AAJI,AAAD,iBAAQ,CAAA;EACJ,SAAS,EAAE,MAAM;EACjB,QAAQ,EAAE,QAAQ;CACrB",
-    "sources": [
-        "../src/assets/scss/blocks/container.scss"
-    ],
-    "names": [],
-    "file": "container.css"
-}
