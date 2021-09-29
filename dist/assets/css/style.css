@@ -413,6 +413,7 @@ body {
 
 .header {
     width: 100%;
+    height: 100vh !important;
     overflow: hidden;
     background: #00002c;
     position: relative;
@@ -420,6 +421,7 @@ body {
 
 .header:after {
     content: "";
+    display: block;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -430,7 +432,8 @@ body {
 }
 
 .vanta-canvas {
-    padding-top: 9.4rem;
+    padding-top: 5.5rem;
+    height: 720px !important;
 }
 
 @media (max-width: 991px) {
@@ -1063,7 +1066,7 @@ body {
 }
 
 .works__slider {
-    padding-top: 6rem;
+    padding-top: 10rem;
     padding-bottom: 5rem;
     display: -ms-flexbox;
     display: flex;
